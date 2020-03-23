@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ultra Instinct</title>
+	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" type="text/css" href="index2.css">
+</head>
+<body>
+	<div class="fondo">
+		<div class="aura"></div>
+		<div class="goku"></div>
+		<div class="content-efect">
+			<div class="efects"></div>
+		</div>
+		<div class="efects2"></div>
+	</div>
+	<div class="content-start">
+		<div class="content-menu">
+			<h1>Mi pantalla de inicio</h1>
+			<input type="text" id="idsearch" placeholder="Buscar en google...">
+			<div class="content-redirect">
+				<div class="redirect-body">
+					<div class="content-body">
+						<a href="https://www.facebook.com/">
+							<div class="icon" style="color: #1a67c5;"><i class="fa fa-facebook-square" aria-hidden="true"></i></div>
+							<h6 style="color: #1a67c5;">Facebook</h6>
+						</a>
+					</div>
+				</div>
+				<div class="redirect-body">
+					<div class="content-body">
+						<a href="https://web.whatsapp.com/">
+							<div class="icon" style="color: #519209;"><i class="fa fa-whatsapp" aria-hidden="true"></i></div>
+							<h6 style="color: #519209;">Whatsapp</h6>
+						</a>
+					</div>
+				</div>
+				<div class="redirect-body">
+					<div class="content-body">
+						<a href="https://www.youtube.com/?hl=es-419&gl=PE">
+							<div class="icon" style="color: #ec0b0b;"><i class="fa fa-youtube-play" aria-hidden="true"></i></div>
+							<h6 style="color: #ec0b0b;">Youtube</h6>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		function validate_key(e){
+			if(e.code=="Enter"){			
+				window.location.href='https://www.google.com/search?q='+this.value+'&rlz=1C1CHBF_esPE802PE802&oq='+this.value+'&aqs=chrome..69i57j0l7.1031j0j8&sourceid=chrome&ie=UTF-8';
+			}
+		}
+		document.getElementById("idsearch").addEventListener('keyup',validate_key,false);
+	</script>
+</body>
+</html>
